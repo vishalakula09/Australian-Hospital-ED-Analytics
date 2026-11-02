@@ -1,9 +1,50 @@
 
+<div align="center">
+
 # Australian Hospital Emergency Department Analytics
 
-**Python | SQL | MySQL | Power BI | Healthcare Data Analytics**
+### Healthcare Performance Analytics | Python · MySQL · Power BI
 
-An end-to-end healthcare analytics project exploring Australian hospital emergency department performance from **2011–12 to 2024–25**, using Python for data preparation, MySQL for analysis and validation, and Power BI for interactive reporting.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logoColor=black)
+![Healthcare Analytics](https://img.shields.io/badge/Healthcare_Analytics-34536B?style=flat-square)
+
+**Australian Hospital ED Performance | FY 2011–12 to FY 2024–25 | Three-Page Power BI Report**
+
+An end-to-end analysis of emergency department demand, patient flow, treatment timeliness, and performance across Australian states and territories.
+
+</div>
+
+---
+
+## Dashboard Preview
+
+![Australian Hospital ED Overview Dashboard](Screenshots/01_ED_Overview.png)
+
+*ED overview showing national presentations, year-on-year growth, historical performance, and state comparisons.*
+
+**[Explore all three dashboard pages](#power-bi-dashboards)**
+
+---
+
+## Project Navigation
+
+[Overview](#project-overview) · [Objectives](#project-objectives) · [Data Sources](#data-sources) · [Methodology](#project-methodology) · [Findings](#key-analytical-findings) · [Dashboards](#power-bi-dashboards) · [Validation](#sql-data-validation-results) · [Run the Project](#how-to-run-the-project)
+
+---
+
+## Key Metrics at a Glance
+
+| FY 2024–25 Indicator | Result |
+|---|---:|
+| **National ED Presentations** | **9,091,132** |
+| **Four-Hour Departure Performance** | **53%** |
+| National Median ED Duration | 228 minutes |
+| National P90 ED Duration | 676 minutes |
+| Annual Presentation Growth | 0.84% |
+
+*These are reported values from the project's analysis; definitions, scope, and limitations appear below.*
 
 ---
 
@@ -220,7 +261,7 @@ Financial-year slicers support historical comparisons, while selected trend char
 
 For 2024–25:
 
-| Patient cohort | Median ED duration |
+| Patient Cohort | Median ED Duration |
 |---|---:|
 | Subsequently admitted patients | 373 minutes |
 | All patients | 228 minutes |
@@ -232,7 +273,7 @@ Subsequently admitted patients recorded longer median ED durations than patients
 
 For FY 2024–25:
 
-| State or territory | Four-hour departure rate |
+| State or Territory | Four-Hour Departure Rate |
 |---|---:|
 | ACT | 61% |
 | NSW | 56% |
@@ -258,7 +299,7 @@ These comparisons are descriptive and should not be interpreted as direct measur
 
 For FY 2024–25:
 
-| Triage category | Patients seen on time |
+| Triage Category | Patients Seen on Time |
 |---|---:|
 | Resuscitation | 100% |
 | Non-Urgent | 89% |
@@ -282,7 +323,7 @@ The analysis included hospitals with:
 
 Results included:
 
-| Hospital peer group | Eligible hospitals | Below benchmark |
+| Hospital Peer Group | Eligible Hospitals | Below Benchmark |
 |---|---:|---:|
 | Major hospitals | 31 | 58.06% |
 | Large metropolitan hospitals | 30 | 56.67% |
@@ -310,19 +351,19 @@ However, these findings are descriptive and do not independently establish causa
 
 Three interactive Power BI dashboard pages were developed to communicate the analytical findings.
 
-### 1. ED Overview
+### 01 — ED Overview
 
 Displays national emergency department presentations, year-on-year growth, four-hour departure performance, historical trends, and state-level presentation volumes.
 
 ![ED Overview Dashboard](Screenshots/01_ED_Overview.png)
 
-### 2. Patient Flow & Timeliness
+### 02 — Patient Flow & Timeliness
 
 Analyses median and 90th-percentile ED durations, patient-cohort differences, historical duration trends, and treatment timeliness by triage category.
 
 ![Patient Flow and Timeliness Dashboard](Screenshots/02_Patient_Flow_Timeliness.png)
 
-### 3. State & Territory Performance
+### 03 — State & Territory Performance
 
 Compares four-hour departure rates and median ED durations across eight Australian states and territories.
 
@@ -349,7 +390,7 @@ Validation was performed using MySQL queries to examine data completeness, consi
 
 ### Record Counts and Quality Flags
 
-| Dataset | Total records | Quality-caution records |
+| Dataset | Total Records | Quality-Caution Records |
 |---|---:|---:|
 | ED Waiting Times | 21,972 | 385 |
 | Four-Hour Performance | 36,289 | 306 |
@@ -359,7 +400,7 @@ For the duration dataset, 94 records had both median and P90 quality-caution ind
 
 ### Quality-Caution Staging Checks
 
-| Staging table | Flagged records | Duplicate matching-key groups |
+| Staging Table | Flagged Records | Duplicate Matching-Key Groups |
 |---|---:|---:|
 | Waiting-Time Staging | 385 | 0 |
 | Four-Hour Staging | 306 | 0 |
@@ -587,4 +628,10 @@ Master of Data Science — Deakin University
 
 ---
 
+<div align="center">
+
 *Independent healthcare analytics portfolio project using publicly available Australian hospital reporting statistics.*
+
+**Turning healthcare data into meaningful performance insights.**
+
+</div>
