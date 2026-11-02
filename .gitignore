@@ -1,0 +1,34 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local development files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# Power BI temporary files
+*.pbit.lock
+*.pbix.lock
+
+# Redundant local SQL backup
+SQL/05_workbench_queries_backup.sql
+
+# Redundant local SQL backup
+SQL/05_workbench_queries_backup.sql
